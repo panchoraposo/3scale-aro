@@ -1,0 +1,21 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIManager
+metadata:
+  name: demo-apimanager
+  namespace: threescale
+spec:
+  system:
+    fileStorage:
+      persistentVolumeClaim:
+        storageClassName: azure-file-threescale
+  wildcardDomain: <CHANGE_ME>
+  resourceRequirementsEnabled: false
+  externalComponents:
+    backend:
+      redis: false
+    system:
+      database: false
+      redis: false
+    zync:
+      database: false
+      
