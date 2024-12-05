@@ -3,7 +3,6 @@ kind: StorageClass
 metadata: 
   name: azure-file-threescale
 mountOptions: 
-
 - uid=<CHANGE_ME>
 - gid=0
 - mfsymlinks
